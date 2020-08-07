@@ -34,12 +34,12 @@
         </header>
 
         <main>
-            <form action="" id="create-classes">
+            <form action="" id="create-class">
                 <fieldset>
                     <legend>Seus dados</legend>
                     <div class="input-block">
                         <label for="name">Nome Completo</label>
-                        <input name="name" id="name" type="url" required>
+                        <input name="name" id="name" type="name" required>
                     </div>
                     
                     <div class="input-block">
@@ -90,11 +90,43 @@
                     </legend>
 
                     <div class="schedule-item">
+                        <div class="select-block">
+                            <label for="weekday">Dia da semana</label>
+                            <select name="weekday[]" id="weekday" required>
+                                    <option value="">Selecione uma opção</option>
+                                    <option value="0">Domingo</option>
+                                    <option value="1">Segunda-feira</option>
+                                    <option value="2">Terça-feira
+                                    </option>
+                                    <option value="3">Quarta-feira</option>
+                                    <option value="4">Quinta-feira</option>
+                                    <option value="5">Sexta-feira</option>
+                                    <option value="6">Sábado</option>
+                            </select>
+                        </div>
+
+                        <div class="input-block">
+                            <label for="time_from">Das</label>
+                            <input type="time"  name="time_from[]" required>
+                        </div>
 
                         
+                        <div class="input-block">
+                            <label for="time_to">Até</label>
+                            <input type="time"  name="time_to[]" required>
+                        </div>
                     </div>
                 </fieldset>
             </form>
+
+            <footer>
+                <p>
+                    <img src="/images/images/icons/warning.svg" alt="Aviso importante">
+                    Importante! </br>
+                    Preencha todos os dados
+                </p>
+                <button type="submit" form="create-class">Salvar cadastro</button>
+            </footer>
         </main>
     </div>
 </body>
