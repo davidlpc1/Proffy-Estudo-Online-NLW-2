@@ -22,12 +22,12 @@
 
 .page-header .top-bar-container a{
     height: 3.2rem;
-    transition: 0.2s ;
+    transition: 0.3s ;
 }
 
 .page-header .top-bar-container a:hover{
     opacity: 0.6;
-    transform: translateX(-0.4rem);
+    transform: translateX(-1.2rem);
 }
 
 .page-header .top-bar-container > img{
