@@ -24,12 +24,13 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: background 0.2s;
+    transition: 0.2s;
     margin-top: 3.2rem;
 }
 
 #search-teachers button:hover{
     background-color: var(--color-secondary-dark);
+    transform: translateY(-0.2rem)
 }
 
 #page-study main{
@@ -54,6 +55,12 @@
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
+    transition:0.3s;
+}
+
+.teacher-item header img:hover{
+    opacity: 0.89;
+    transform: translateY(-0.7rem)
 }
 
 .teacher-item header div{
@@ -116,12 +123,13 @@
 
     text-decoration: none;
 
-    transition: background 0.2s;
+    transition: 0.3s;
     margin-left: 1.6rem;
 }
 
 .teacher-item footer button:hover{
     background-color: var(--color-secondary-dark);
+    transform:translateY(-0.8rem)
 }
 
 @media (min-width: 700px){
